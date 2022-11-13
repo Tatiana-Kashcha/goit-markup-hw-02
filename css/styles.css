@@ -1,18 +1,24 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-page-color: #FFFFFF;
+}
+
 body {
-    color: #212121;
-    background: #FFFFFF;
-    height: 100%;
+    color: var(--primary-text-color);
+    background: var(--primary-page-color);
     font-family: Roboto, Raleway, sans-serif;
 }
 
 /* header */
 
-.logo-link {
+.logo {
     text-decoration: none;
 }
 
-.logo-text-web {
-    color: #2196F3;
+.logo-web, .logo-studio {
+    color: var(--accent-color);
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -21,22 +27,16 @@ body {
     letter-spacing: 0.03em;
 }
 
-.logo-text-studio {
+.logo-studio {
     color: #000000;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
 }
 
-.navigation, .contacts {
+.navigation, .contact {
     list-style: none;
 }
 
-.navigation-site {
-    color: #212121;
+.navigation .link {
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -44,20 +44,23 @@ body {
     text-decoration: none;
 }
 
-.navigation-site:hover, .navigation-site:focus {
-    color: #2196F3;
+.navigation .link:hover, .navigation .link:focus {
+    color: var(--accent-color);
 }
 
-.contacts-site {
-    color: #757575;
+.navigation .link.current {
+    color: var(--accent-color);
+}
+
+.contact .link {
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
-    list-style: none;
 }
 
-.contacts-site:hover, .contacts-site:focus {
-    color: #2196F3;
+.contact .link:hover, .contact .link:focus {
+    color: var(--accent-color);
 }
