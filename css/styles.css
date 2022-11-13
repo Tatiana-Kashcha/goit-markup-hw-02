@@ -103,13 +103,87 @@ body {
     border-color: #FFFFFF;
 }
 
+.advantage-list {
+    list-style: none;
+}
+
+.advantage-list .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.advantage-list .descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.work .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+}
+
+.work-list, .team-list {
+    list-style: none;
+}
+
+.team-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+}
+
+.team-list .title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+
+.team-list .descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+
+/* footer */
+
+.page-footer {
+    background-color: #2F303A;
+    width: 100%;
+    height: 200px;
+}
+
+.page-footer .logo-studio {
+    color: #FFFFFF;
+}
 
 .residence {
     font-style: normal;
 }
 
+.residence .descr {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
 .residence .link {
-    color: var(--primary-text-color);
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
