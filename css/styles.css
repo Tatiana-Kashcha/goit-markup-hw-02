@@ -1,12 +1,20 @@
+body {
+    color: #212121;
+    background: #FFFFFF;
+    height: 100%;
+    font-family: Roboto, Raleway, sans-serif;
+}
 
 /* header */
 
-.link-logo {
+.logo-link {
     text-decoration: none;
 }
 
 .logo-text-web {
     color: #2196F3;
+    font-family: 'Raleway';
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
@@ -15,8 +23,41 @@
 
 .logo-text-studio {
     color: #000000;
+    font-family: 'Raleway';
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+}
+
+.navigation, .contacts {
+    list-style: none;
+}
+
+.navigation-site {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.navigation-site:hover, .navigation-site:focus {
+    color: #2196F3;
+}
+
+.contacts-site {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contacts-site:hover, .contacts-site:focus {
+    color: #2196F3;
 }
