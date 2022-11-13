@@ -64,3 +64,23 @@ body {
 .contact .link:hover, .contact .link:focus {
     color: var(--accent-color);
 }
+
+/* main Студія */
+
+.residence {
+    font-style: normal;
+}
+
+.residence .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.residence .link:hover, .residence .link:focus {
+    color: var(--accent-color);
+}
+
