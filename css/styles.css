@@ -85,10 +85,9 @@ body {
 
 .hero-btn {
     color: #FFFFFF;
-    background: #2196F3;
-    
+    background: var(--accent-color);
+    cursor: pointer;
     /* перевірити макет */
-    border-color: #2196F3;
     width: 216px;
     height: 50px;
     box-shadow: rgba(0, 0, 0, 0.15);
@@ -164,6 +163,40 @@ body {
     list-style: none;
 }
 
+.filter-btn {
+    color: var(--title-text-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.filter-btn:hover, .filter-btn:focus {
+    background: var(--accent-color);
+    color: #FFFFFF;
+}
+    
+.project-list {
+    list-style: none;
+}
+
+.project-list-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.project-list-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
 
 
 /* footer */
