@@ -1,14 +1,20 @@
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
+    --accent-text-color:#FFFFFF;
+    --link-text-color: rgba(255, 255, 255, 0.6);
     --accent-color: #2196F3;
-    --primary-page-color: #FFFFFF;
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
+    --hero-background-color:#2F303A;
+    --footer-background-color: #2F303A;
+    
 }
 
 body {
     color: var(--primary-text-color);
-    background: var(--primary-page-color);
-    font-family: Roboto, Raleway, sans-serif;
+    background-color: var(--primary-background-color);
+    font-family: Roboto, sans-serif;
 }
 
 
@@ -70,11 +76,11 @@ body {
 /* main Студія */
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--hero-background-color);
 }
 
 .hero-title {
-    color: #FFFFFF;
+    color: var(--accent-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -84,8 +90,8 @@ body {
 }
 
 .hero-btn {
-    color: #FFFFFF;
-    background: var(--accent-color);
+    color: var(--accent-text-color);
+    background-color: var(--accent-color);
     cursor: pointer;
     border-radius: 4px;
     font-weight: 700;
@@ -155,13 +161,26 @@ body {
 
 /* main Портфоліо */
 
-.filter-list {
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.filter {
     list-style: none;
 }
 
 .filter-btn {
     color: var(--title-text-color);
-    background: #F5F4FA;
+    background-color: var(--secondary-background-color);
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -171,8 +190,8 @@ body {
 }
 
 .filter-btn:hover, .filter-btn:focus {
-    color: #FFFFFF;
-    background: var(--accent-color);
+    color: var(--accent-text-color);
+    background-color: var(--accent-color);
     border-color: var(--accent-color);
 }
     
@@ -199,11 +218,11 @@ body {
 /* footer */
 
 .page-footer {
-    background-color: #2F303A;
+    background-color: var(--footer-background-color);
 }
 
 .page-footer .logo-studio {
-    color: #FFFFFF;
+    color: var(--accent-text-color);
 }
 
 .residence {
@@ -215,7 +234,7 @@ body {
 }
 
 .residence-descr {
-    color: #FFFFFF;
+    color: var(--accent-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -223,7 +242,7 @@ body {
 }
 
 .residence-link {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--link-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
