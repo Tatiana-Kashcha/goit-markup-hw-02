@@ -8,6 +8,7 @@
     --secondary-background-color: #F5F4FA;
     --hero-background-color:#2F303A;
     --footer-background-color: #2F303A;
+    --btn-accent-color: #188CE8;
     
 }
 
@@ -100,7 +101,7 @@ body {
 }
 
 .hero-btn:hover, .hero-btn:focus {
-    border-color: var(--accent-color);
+    background-color: var(--btn-accent-color);
 }
 
 .advantage-list {
