@@ -3,12 +3,14 @@
     --title-text-color: #212121;
     --accent-text-color:#FFFFFF;
     --link-text-color: rgba(255, 255, 255, 0.6);
-    --accent-color: #2196F3;
+    --primary-accent-color: #2196F3;
     --primary-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
+    /* пізніше буде інший колір у hero, тому своя var*/
     --hero-background-color:#2F303A;
     --footer-background-color: #2F303A;
-    --btn-accent-color: #188CE8;
+    --secondary-accent-color: #188CE8;
+    --project-border-color: #EEEEEE;
     
 }
 
@@ -18,7 +20,6 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-
 /* header */
 
 .logo {
@@ -26,7 +27,7 @@ body {
 }
 
 .logo-web, .logo-studio {
-    color: var(--accent-color);
+    color: var(--primary-accent-color);
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -53,11 +54,11 @@ body {
 }
 
 .navigation-link:hover, .navigation-link:focus {
-    color: var(--accent-color);
+    color: var(--primary-accent-color);
 }
 
 .navigation-link.current {
-    color: var(--accent-color);
+    color: var(--primary-accent-color);
 }
 
 .contact-link {
@@ -70,7 +71,7 @@ body {
 }
 
 .contact-link:hover, .contact-link:focus {
-    color: var(--accent-color);
+    color: var(--primary-accent-color);
 }
 
 
@@ -92,8 +93,9 @@ body {
 
 .hero-btn {
     color: var(--accent-text-color);
-    background-color: var(--accent-color);
+    background-color: var(--primary-accent-color);
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
@@ -101,7 +103,20 @@ body {
 }
 
 .hero-btn:hover, .hero-btn:focus {
-    background-color: var(--btn-accent-color);
+    background-color: var(--secondary-accent-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .advantage-list {
@@ -136,12 +151,22 @@ body {
     list-style: none;
 }
 
+.team {
+    background-color: var(--secondary-background-color);
+}
+
 .team-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.03em;
+}
+ 
+.team-item {
+    background-color: var(--primary-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-title {
@@ -162,19 +187,6 @@ body {
 
 /* main Портфоліо */
 
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-
 .filter {
     list-style: none;
 }
@@ -192,12 +204,20 @@ body {
 
 .filter-btn:hover, .filter-btn:focus {
     color: var(--accent-text-color);
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    background-color: var(--primary-accent-color);
+    border-color: var(--primary-accent-color);
 }
     
 .project-list {
     list-style: none;
+}
+
+.project-container {
+    border: 1px solid var(--project-border-color);
+}
+
+.project-link {
+    text-decoration: none;
 }
 
 .project-list-title {
@@ -209,10 +229,17 @@ body {
 }
 
 .project-list-descr {
+    color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
+
+}
+
+.project-list-title:hover, .project-list-title:focus,
+.project-list-descr:hover, .project-list-descr:focus {
+    color: var(--primary-accent-color);
 }
 
 
@@ -240,6 +267,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .residence-link {
@@ -251,7 +279,8 @@ body {
     text-decoration: none;
 }
 
+.residence-descr:hover, .residence-descr:focus, 
 .residence-link:hover, .residence-link:focus {
-    color: var(--accent-color);
+    color: var(--primary-accent-color);
 }
 
