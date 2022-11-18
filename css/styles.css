@@ -1,18 +1,17 @@
 :root {
     --primary-text-color: #757575;
-    --title-text-color: #212121;
     --secondary-text-color:#000000;
+    --title-text-color: #212121;
     --accent-text-color:#FFFFFF;
     --link-text-color: rgba(255, 255, 255, 0.6);
     --primary-accent-color: #2196F3;
+    --secondary-accent-color: #188CE8;
     --primary-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
     /* пізніше буде інший колір у hero, тому своя var*/
     --hero-background-color:#2F303A;
     --footer-background-color: #2F303A;
-    --secondary-accent-color: #188CE8;
     --project-border-color: #EEEEEE;
-    
 }
 
 body {
@@ -24,10 +23,6 @@ body {
 /* header */
 
 .logo {
-    text-decoration: none;
-}
-
-.logo-web, .logo-studio {
     color: var(--primary-accent-color);
     font-family: 'Raleway';
     font-style: normal;
@@ -35,6 +30,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .logo-studio {
