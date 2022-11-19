@@ -97,6 +97,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    font-family: inherit;
 }
 
 .hero-btn:hover, .hero-btn:focus {
@@ -196,6 +197,7 @@ body {
     line-height: 1.62;
     letter-spacing: 0.03em;
     cursor: pointer;
+    font-family: inherit;
 }
 
 .filter-btn:hover, .filter-btn:focus {
@@ -258,7 +260,6 @@ body {
 
 .residence-descr {
     color: var(--accent-text-color);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -267,12 +268,12 @@ body {
 
 .residence-link {
     color: var(--link-text-color);
-    /* font-weight: 500; */
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    text-decoration: none;
+    text-decoration: none;   
 }
+
 
 .residence-descr:hover, .residence-descr:focus, 
 .residence-link:hover, .residence-link:focus {
