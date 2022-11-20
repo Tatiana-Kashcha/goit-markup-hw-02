@@ -97,6 +97,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    letter-spacing: 0.06em;
     font-family: inherit;
 }
 
@@ -175,7 +176,6 @@ body {
 }
 
 .team-list-descr {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -231,12 +231,6 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-
-}
-
-.project-list-title:hover, .project-list-title:focus,
-.project-list-descr:hover, .project-list-descr:focus {
-    color: var(--primary-accent-color);
 }
 
 
